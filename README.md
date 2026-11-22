@@ -1,2 +1,3 @@
 # rig-dep4
-fresh action for policy-cache test
+
+Fresh third-party action for authorized policy testing (prior-use cache).

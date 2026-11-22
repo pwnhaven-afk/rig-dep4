@@ -1,0 +1,14 @@
+name: rig-dep4
+description: fresh third-party composite action for prior-use policy testing
+outputs:
+  marker:
+    description: marker
+    value: ${{ steps.m.outputs.marker }}
+runs:
+  using: composite
+  steps:
+    - id: m
+      shell: bash
+      run: |
+        echo "DEP4_MARKER=FOURTH-THIRD-PARTY-EXECUTED"
+        echo "marker=FOURTH-THIRD-PARTY-EXECUTED" >> "$GITHUB_OUTPUT"
